@@ -8,7 +8,7 @@ html {
         width: 3.5rem;
         height: 3.5rem;
         background-color: $color-orange;
-        position: sticky;
+        position: fixed;
         top: 0;
         left: 0;
         display: flex;
@@ -53,15 +53,6 @@ html {
         align-items: center;
         padding-top: 40vh;
         text-align: center;
-        transform: translateY(-3.4rem);
-
-        @media all and (min-width: 768px) {
-            transform: translateY(-4.4rem);
-        }
-
-         @media all and (min-width: 1200px) {
-                transform: translateY(-4.5rem);
-        }
 
         &--title {
             color: $color-white;
@@ -89,6 +80,7 @@ html {
             color: $color-white;
             font-size: 1.6rem;
             font-family: $font-main;
+            font-weight: 400;
 
             @media all and (min-width: 768px) {
                 max-width: 34rem;

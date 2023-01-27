@@ -1,0 +1,70 @@
+html {
+    font-size: 62.5%;
+}
+
+.main__sectionConnect{
+
+    padding: 3.4rem 1.2rem 2rem 1.3rem;
+
+    @media all and (min-width: 768px) {
+        max-width: 90vw;
+        margin: auto;
+        
+    }
+    
+    @media all and (min-width: 1200px) {
+        max-width: 65vw;
+        margin-left: 25vw;
+        margin-right: 10vw;
+    }
+
+    &--subtitle{
+        line-height: 2.14;
+        font-size: 1.4rem;
+        color: $color-orange;
+        font-family: $font-main;
+        font-weight: 400;
+
+        @media all and (min-width: 768px) {
+            line-height: 1.88;
+            font-size: 1.6rem;
+    
+        }
+    
+    }
+
+    &--title{
+        font-family: $font-title;
+        font-size: 2.4rem;
+        line-height: 1.25;
+        padding-bottom: 11px;
+
+        @media all and (min-width: 768px) {
+            line-height: 1.41;
+            font-size: 3.2rem;
+    
+        }
+    }
+
+    &--content{
+        line-height: 1.67;
+        font-size: 1.8rem;
+        color: $color-darkgrey;
+        font-family: $font-main;
+        font-weight: 400;
+
+        @media all and (min-width: 768px) {
+            line-height: 1.5;
+            font-size: 2rem;
+    
+        }
+    }
+
+    &--btn{
+        width: 16rem;
+        height: 4.5rem;
+        background-color: $color-white;
+        color: $color-orange;
+    }
+
+}
