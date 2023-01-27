@@ -4,7 +4,7 @@ html {
 
 .main__sectionConnect{
 
-    padding: 3.4rem 1.2rem 2rem 1.3rem;
+    padding: 3.4rem 2rem 2rem 3rem;
 
     @media all and (min-width: 768px) {
         max-width: 90vw;
@@ -62,9 +62,99 @@ html {
 
     &--btn{
         width: 16rem;
-        height: 4.5rem;
         background-color: $color-white;
         color: $color-orange;
     }
 
+}
+
+.main__sectionAnio{
+    background-color: #F2F2F2;
+    padding: 3rem; 
+    font-family: $font-title;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1;
+    gap: 3.2rem;
+
+    @media all and (min-width: 768px) {
+        grid-template-columns: 3;
+        grid-template-rows: 3;
+
+        &--title{
+            grid-column: 1/4;
+        }
+
+         .articleA{
+            grid-column: 1 / 2;
+            gap: 1.8rem;
+        }
+
+        .articleB{
+            grid-column:  2 / 3;
+        }
+
+        .articleC{
+            grid-column: 3 / 4;
+        }
+
+        &--btn{
+            grid-column: 1 / 4;
+        }
+    }
+
+    @media all and (min-width: 1200px) {
+        
+    }
+
+    &--title {
+        font-size: 2rem;
+        line-height: 1.5;
+
+        @media all and (min-width: 768px) {
+            font-size: 2.8rem;
+            line-height: 1.61;
+        }
+        
+         @media all and (min-width: 1200px) {
+            font-size: 3.2rem;
+            line-height: 1.41;
+        }
+    }
+
+    &--article{
+        font-size: 1.8rem;
+        line-height: 1.67;
+        padding: 0 1rem;
+
+        &--title{
+
+            @media all and (min-width: 768px) {
+                font-size: 2.4rem;
+                line-height: 1.25;
+                margin-bottom: 2vh;
+            }
+        
+        }
+
+        &--content {
+            font-family: $font-main;
+
+            @media all and (min-width: 768px) {
+                font-size: 2rem;
+                line-height: 1.5;
+            }
+        
+ 
+        }
+    }
+
+    &--btn{
+        background-color: $color-orange;
+        color: $color-white;
+        width: 18.4rem;
+        margin: auto;
+    }
+    
+    
 }
