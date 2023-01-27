@@ -1,0 +1,143 @@
+html {
+    font-size: 62.5%;
+}
+
+.header {
+
+    &__nav {
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: $color-orange;
+        position: sticky;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-main;
+        z-index: 10;
+
+        @media all and (min-width: 768px) {
+                width: 4.2rem;
+                height: 4.2rem;
+            }
+
+        @media all and (min-width: 1200px) {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+
+            &--link{
+                width: 1.3rem;
+                height: 1.1rem;       /*repàs centrat*/
+
+                @media all and (min-width: 768px) {
+                        width: 1.5rem;
+                        height: 1.4rem;
+                }
+                @media all and (min-width: 1200px) {
+                    width: 1.6rem;
+                    height: 1.4rem;
+                }
+            }
+    }
+
+    &__hero {
+        background-image: url("../images/cover.jpeg");
+        background-size: cover;
+        background-position: top;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40vh;
+        text-align: center;
+        transform: translateY(-3.4rem);
+
+        @media all and (min-width: 768px) {
+            transform: translateY(-4.4rem);
+        }
+
+         @media all and (min-width: 1200px) {
+                transform: translateY(-4.5rem);
+        }
+
+        &--title {
+            color: $color-white;
+            font-family: $font-title;
+            text-transform: uppercase;
+            line-height: 1.67;
+            font-size: 3rem;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+            @media all and (min-width: 768px) {
+                    max-width: 68.7rem;
+                    font-size: 7rem;
+                    line-height: 1.33;
+            }
+            
+            @media all and (min-width: 1200px) {
+                max-width: 95.5rem;
+                font-size: 10rem;
+                line-height: 1.32;
+            }
+        }
+
+        &--subtitle {
+            line-height: 1.19;
+            color: $color-white;
+            font-size: 1.6rem;
+            font-family: $font-main;
+
+            @media all and (min-width: 768px) {
+                max-width: 34rem;
+                font-size: 2.4rem;
+                line-height: 1.17;
+            }
+            
+            @media all and (min-width: 1200px) {
+                max-width: 74.8rem;
+                font-size: 2.4rem;
+                line-height: 1.17;
+            }
+
+        }
+
+        &--linkcontainer {
+            background-color: $color-white;
+            border-radius: 50%;
+            width: 3.8rem;
+            height: 3.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1.5rem;
+
+            @media all and (min-width: 768px) {
+                width: 4.2rem;
+                height: 4.5rem;
+            }
+            
+            @media all and (min-width: 1200px) {
+                width: 4.6rem;
+                height: 4.6rem;
+            }
+
+            &--link {
+                padding-top: 0.5rem;
+
+                @media all and (min-width: 768px) {
+                    padding-top: 0;
+                    width: 1.9rem;
+                    height: 1.2rem;
+                }
+                
+                @media all and (min-width: 1200px) {
+                    width: 2rem;
+                    height: 1.1rem;
+                }
+            }
+        }
+    }
+}
