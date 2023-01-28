@@ -8,6 +8,27 @@
     color: $color-white;
     position: relative;
 
+    @media all and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .nav-sections{
+            order: 2; 
+        }
+
+        .nav-soc{
+            order: 3;
+        }
+
+        &__copycontainer{
+             order: 1;
+             min-width: 8rem;
+             text-align: justify;
+             align-items: flex-start;
+        }
+    }
+
     &__linkcontainer{
         background-color: $color-white;
         border-radius: 50%;
@@ -19,14 +40,6 @@
         position: absolute;
         top:-2.75rem;
         box-shadow: 0px 5px 9px -3px rgba(0, 0, 0, 0.75);
-
-        // @media all and (min-width: 768px) {
-        //    
-        // }
-        
-        // @media all and (min-width: 1200px) {
-        //    
-        // }
     }
 
     &__nav{
@@ -35,6 +48,11 @@
         font-size: 1.6rem;
         line-height: 2.14;
         text-align: center;
+
+        @media all and (min-width: 768px) {
+            margin-bottom: 3.4rem;
+            text-align: justify;
+        }
 
         &--list--item{
             list-style: none;
@@ -47,21 +65,28 @@
 
     }
 
-    &__copyright{
+    &__copycontainer{
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 2.14;
         margin-top: 2.5rem;
-        font-size: 1.4rem;
-        line-height: 2.14;
-    }
-
-    &__slogan{
         margin-bottom: 1rem;
-        font-size: 1.4rem;
-        line-height: 2.14;
+
+        @media all and (min-width: 768px) {     
+            order: 1;
+            min-width: 8rem;
+            text-align: justify;
+           
+        }
+        
+    
+        .fa-solid {
+            color: $color-orange;
+    
+        }
+        
     }
 
-    .fa-solid{
-        color: $color-orange;
-
-    }
+ 
 
 }
