@@ -29,7 +29,8 @@ html {
 
             &--link{
                 width: 1.3rem;
-                height: 1.1rem;       /*repàs centrat*/
+                height: 1.1rem;
+                transform: translate(-15%, -15%);       
 
                 @media all and (min-width: 768px) {
                         width: 1.5rem;

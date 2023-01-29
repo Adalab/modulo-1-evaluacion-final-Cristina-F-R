@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%;
+}
+
 .footer{
     background-color: $color-darkgrey;
     display: flex;
@@ -29,6 +33,11 @@
         }
     }
 
+    @media all and (min-width: 1200px) {
+        padding: 0% 18%;
+        
+    }
+
     &__linkcontainer{
         background-color: $color-white;
         border-radius: 50%;
@@ -44,7 +53,7 @@
 
     &__nav{
         text-transform: uppercase;
-        margin-top: 4rem;
+        margin-top: $footer-nav;
         font-size: 1.6rem;
         line-height: 2.14;
         text-align: center;
@@ -76,6 +85,7 @@
             order: 1;
             min-width: 8rem;
             text-align: justify;
+            margin-top: $footer-nav;
            
         }
         
