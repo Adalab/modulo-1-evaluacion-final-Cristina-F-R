@@ -64,6 +64,12 @@ html {
         width: 16rem;
         background-color: $color-white;
         color: $color-orange;
+        transition: 0.5s;
+    }  
+        
+    &--btn:hover {
+            background-color:  $color-orange;
+            color: $color-white;
     }
 
 }
@@ -154,6 +160,13 @@ html {
         color: $color-white;
         width: 18.4rem;
         margin: auto;
+        transition: 0.5s;
+        }
+        
+    &--btn:hover {
+        background-color: $color-white;
+        color: $color-orange;
+    
     }
     
     
